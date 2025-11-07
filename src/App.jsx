@@ -12,51 +12,6 @@ function App() {
     <div>App</div>
     <div>App</div>
     <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
     </>
   )
 }
