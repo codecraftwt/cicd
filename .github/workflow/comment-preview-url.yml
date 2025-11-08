@@ -1,0 +1,39 @@
+name: Comment Preview URL
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment PR with Preview URL
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const branchName = context.payload.pull_request.head.ref;
+            const projectName = 'cicd'; // Replace with your project name
+            const vercelUsername = 'code's-projects'; // Replace with your Vercel username
+            
+            // Format branch name for URL (replace / with -)
+            const formattedBranch = branchName.replace(/\//g, '-');
+            
+            const previewUrl = `https://${projectName}-git-${formattedBranch}-${vercelUsername}.vercel.app`;
+            
+            const comment = `## 🚀 Preview Deployment
+            
+Your preview deployment is ready!
+
+📦 **Preview URL**: ${previewUrl}
+🔗 **Branch**: \`${branchName}\`
+            
+*Note: It may take a few moments for the deployment to be available.*`;
+            
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: comment
+            });
