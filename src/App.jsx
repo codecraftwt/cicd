@@ -3,15 +3,7 @@ import React from 'react'
 function App() {
   return (
     <>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
-    <div>App</div>
+    <div>Hello all this is testing </div>
     </>
   )
 }

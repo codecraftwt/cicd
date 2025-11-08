@@ -1,7 +1,9 @@
 *{
   margin: 0;
   padding: 0;
-  background: #212121;
+  background: rgb(24, 24, 24);
+  text-align: center;
+  margin: auto;
   font-family: 'Courier New', Courier, monospace;
   color: rgb(222, 213, 202);
 }
