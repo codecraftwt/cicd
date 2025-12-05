@@ -1,9 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  background: rgb(24, 24, 24);
   text-align: center;
-  margin: auto;
   font-family: 'Courier New', Courier, monospace;
-  color: rgb(222, 213, 202);
+  color: #212121;
+}
+
+body {
+  background-image: linear-gradient(90deg, #212121, white, #ff5f1f);
 }
